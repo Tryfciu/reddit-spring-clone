@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pwxon</groupId>
-	<artifactId>twitter-clone</artifactId>
+	<artifactId>reddit-clone</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>twitter-clone</name>
-	<description>Twitter clone</description>
+	<name>reddit-clone</name>
+	<description>Reddit clone</description>
 
 	<properties>
 		<java.version>11</java.version>
