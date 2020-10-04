@@ -1,14 +1,14 @@
 package pwxon.redditclone.model;
 
 import java.time.Instant;
+import java.util.List;
 import java.util.UUID;
 
-public class Post {
+public class Subreddit {
     private UUID id;
-    private String title;
+    private String name;
     private String description;
-    private int voteCount;
-    private User author;
+    private List<Post> posts;
     private Instant createdAt;
-    private Subreddit subreddit;
+    private User users;
 }

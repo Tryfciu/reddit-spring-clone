@@ -3,11 +3,10 @@ package pwxon.redditclone.model;
 import java.time.Instant;
 import java.util.UUID;
 
-public class User {
+public class Comment {
     private UUID id;
-    private String username;
-    private String password;
-    private String email;
+    private String comment;
+    private Post post;
     private Instant createdAt;
-    private boolean enabled;
+    private User author;
 }
