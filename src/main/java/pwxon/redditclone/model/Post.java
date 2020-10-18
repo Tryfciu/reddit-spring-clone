@@ -11,7 +11,6 @@ import java.time.Instant;
 import java.util.UUID;
 
 import static javax.persistence.FetchType.LAZY;
-import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
 @Entity
@@ -19,7 +18,6 @@ import static javax.persistence.GenerationType.IDENTITY;
 @AllArgsConstructor
 public class Post {
     @Id
-    @GeneratedValue(strategy = IDENTITY)
     private UUID id;
     @NotBlank
     private String title;

@@ -3,6 +3,7 @@ package pwxon.redditclone.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -18,7 +19,6 @@ import static javax.persistence.GenerationType.IDENTITY;
 @Entity
 public class Comment {
     @Id
-    @GeneratedValue(strategy = IDENTITY)
     private UUID id;
     @NotEmpty
     private String comment;

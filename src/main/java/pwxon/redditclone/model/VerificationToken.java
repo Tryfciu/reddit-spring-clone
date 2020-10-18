@@ -9,7 +9,6 @@ import java.time.Instant;
 import java.util.UUID;
 
 import static javax.persistence.FetchType.LAZY;
-import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
 @NoArgsConstructor
@@ -18,7 +17,6 @@ import static javax.persistence.GenerationType.IDENTITY;
 @Table(name = "token")
 public class VerificationToken {
     @Id
-    @GeneratedValue(strategy = IDENTITY)
     private UUID id;
     private String token;
     @OneToOne(fetch = LAZY)

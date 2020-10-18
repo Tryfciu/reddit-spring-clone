@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.UUID;
 
 import static javax.persistence.FetchType.LAZY;
-import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
 @NoArgsConstructor
@@ -19,7 +18,6 @@ import static javax.persistence.GenerationType.IDENTITY;
 @Entity
 public class Subreddit {
     @Id
-    @GeneratedValue(strategy = IDENTITY)
     private UUID id;
     @NotBlank
     private String name;
